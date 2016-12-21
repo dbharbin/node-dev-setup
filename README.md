@@ -110,4 +110,4 @@ This will automatically bring up a localhost browser on port 3000, but additiona
 **FYI's:**
 
 * since the DB410c has only 1G of RAM, it is best to limit additional loads on the target during development.  Thus, running the browser on another platform for test, ssh'ing and developing through ssh, and executing `npm run debug` after a clean boot are all recommended.
-
+* special thanks to Alex Banks from whose sample files I started with to create this project.
