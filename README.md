@@ -51,7 +51,7 @@ Once downloaded, from the root directory of the cloned repo, prepare the demo by
 
 After installng dependencies, build the project
 
-`npm run start'
+`npm run start`
 
 Note that one of the scripts that runs the grunt dependencies must be used to build the client bundle.js and the public/css/style.css sheet.
 
