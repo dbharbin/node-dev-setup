@@ -53,9 +53,20 @@ After installng dependencies, build the project
 
 `npm run start`
 
-Note that one of the scripts that runs the grunt dependencies must be used to build the client bundle.js and the public/css/style.css sheet.
+Note that one of the scripts in package.json that runs the grunt dependencies must be used to build the client bundle.js and the public/css/style.css sheet.
 
-#Configuring for automated builds
+Upon successful completion of this script running, the terminal window should have the following displayed:
+`Linaro Dictionary running on port 3000`
+
+The user can now go to a browser on another machine on the local network and enter the following to see the Node JS browser demo running.  Enter the following url in the remote browser:
+
+`http://<<DB410c node server IP Address>>:3000`  
+
+For example `http://192.168.1.90:3000`
+
+Note that the browser can be accessed on the DB410c target itself through `http://localhost:3000` however it is recommended to use a remote browser in order to minimize the number of apps running on the development target.
+
+###Info: Configuring for automated builds
 There are several things that have been done in the package.json to automate the builds.  These don't have to be done again because they are in the package.json, but for reference this is what was done:
 
 * `npm install grunt --save-dev`
@@ -105,7 +116,7 @@ To leverage an IDE debugger, execute the following command from the development 
 
 `npm run debug`
 
-This will automatically bring up a localhost browser on port 3000, but additionally bring up a browser window with the code-inspector package.  Code-inspector will allow the user to set breakpoints evaluate variables, and other functions that are typical for an IDE for more complex debug scenarios.
+This will automatically bring up Code-inspector in a browser on the DB410c.  The user can then bring up the node JS server from a remote machine as described earlier. Code-inspector will allow the user to set breakpoints evaluate variables, and other functions that are typical for an IDE for more complex debug scenarios.
 
 **FYI's:**
 

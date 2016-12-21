@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "predebug": "grunt",
-    "debug": "xdg-open http://localhost:3000 & xdg-open http://localhost:8080/debug?5858 &  node-inspector & node --debug app",
+    "debug": "xdg-open http://localhost:8080/debug?5858 &  node-inspector & node --debug app",
+    "predebug1": "grunt",
+    "debug1": "xdg-open http://localhost:3000 & xdg-open http://localhost:8080/debug?5858 &  node-inspector & node --debug app",
     "prestart": "grunt",
     "start": "node app",
     "predev": "grunt",
