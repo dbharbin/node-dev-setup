@@ -42,7 +42,8 @@ From a terminal on your DB410c, create and navigate to a development directory a
 ```
 $mkdir node-js	// or whatever dev directory you wish
 $cd node-js
-$git clone ....`
+$git clone https://github.com/dbharbin/node-dev-setup.git
+```
 
 Once downloaded, from the root directory of the cloned repo, prepare the demo by installing all the dependencies
 
